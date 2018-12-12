@@ -1,99 +1,3 @@
-<!DOCTYPE html>
-
-<html>
-
-<head>
-  <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans|Pacifico" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans|Pacifico|Roboto" rel="stylesheet">
-  <title>Live Healthy West Side</title>
-
-
-
-<!-- JS -->
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/modules/data.js"></script>
-<script src="https://code.highcharts.com/modules/drilldown.js"></script>
-<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
-crossorigin=""></script>
-<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="static/js/customcharts.js"></script>
-
-<!-- CSS -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
- crossorigin=""/>
-<link rel="stylesheet" href="static/css/bootstrap.min.css">
-<link rel="stylesheet" href="static/css/custom.css">
-</head>
-
-
-<body>
-
-  <div class="container">
-    <h1> Live Healthy, West Side:</h1><h2> A West Side United Initiative </h2>
-    <p>
-    <h1> A Health Diagnosis: </h1>
-    <img src="static/images/westside.jpg" alt="westside"/>
-    </p>
-    <h2> Average life expectancy in Chicago's loop is 85 years, however, if you take the train a few stops into the West side, life expectancy drops to 69 years.</h2>
-    <img src="static/images/map.jpg" alt="westsidemap"/>
-    <h2> This 16-year life expectancy gap exists due to social inequities in education, physical environment, economic vitality, and healthcare. </h2>
-  <div class="row">
-    <div class="col" id="highschoolchart"></div>
-    <div class="col" id="unemployment"></div>
-    <div class="col" id="household"></div>
-  </div>
-    <h2> In the three West Side community areas where life expectancy is below 70 years – 89-95% of residents are African-American.
-    </h2>
-  <div class="row">
-    <div class="col" id="westgarfieldpark"></div>
-    <div class="col" id="eastgarfieldpark"></div>
-    <div class="col" id="northlawndale"></div>
-    <h3>According to our research, the top 5 Causes of Death in the West Side are:</h3>
-    <div class="col" id="mortality"></div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-<h2> To reduce the life expectancy gap of residents in Westside, WSU is dedicated to bringing healthcare institutions together to address the health of 10 communities in their backyards.
-</h2>
-<h3> For example a health behavior triggered by social indicators that impacts health on the west side is:</h3>
-<div class="col" id="smoking"></div>
-<p>
-<h1>What are the people saying?</h1>
-<img src="static/images/mural-pilsen.jpg" alt="mural-pilsen"/>
-</p>
-<h2> Healthcare Providers in the West Side:</h2>
-<h2>“You’ll hear it from everyone, but there is just not enough behavioral health capacity. We can manage low-complexity conditions, but there is a serious lack of psychiatric providers. I recently heard there are only two Spanish-speaking pediatric psychiatrists in the state of Illinois.”
-</h2>
-<h2>“We could be all treating the same patients, and we don’t know it unless they tell us. They could be working with three different care coordinators or have fallen through the cracks.”
-</h2>
-<h2>“When a patient [from our FQHC] goes to the hospital, we don’t usually know unless they tell us. We have no way of knowing what happens to our patients elsewhere, so we might be unaware of a hospital stay or doing duplicative tests when they come to us.”
-</h2>
-<h2> Residents of the West Side:</h2>
-<h1> A Doctor's Note:</h1>
-<h2>  Based on our analysis of mortality/morbidity data, scan of health program gaps, and one-on-one interviews with health stakeholders in the West Side,  we have found 5 focus areas to address that can ultimately move the needle in life expectancy in the West Side. </h2>
-
-<li> Maternal and Child Health </li>
-<li> Childhood Asthma </li>
-<li> Hypertension Management </li>
-<li> Behavioral Health </li>
-<li> Healthy Eating Active Lifestyle </li>
-</he>
-<img src="static/images/WSUbridge.jpg" alt="WSUBridge"/>
-<h2> In order to address the social determinants of health, West Side United will focus on foundational elements and existing conditions for hospitals to strengthen their impact through a collective set of community health initiatives around our 1-2 of the 5 focus areas.</h2>
-
-
-</body>
-
-<script>
 Highcharts.chart('unemployment', {
     chart: {
         type: 'column'
@@ -142,12 +46,12 @@ Highcharts.chart('unemployment', {
                     "drilldown": "Chrome"
                 },
                 {
-                    "name": "The Loop",
+                    "name": "Loop",
                     "y": 5.3,
                     "drilldown": "Firefox"
                 },
                 {
-                    "name": "Chicago's Average",
+                    "name": "Chicago City",
                     "y": 9.5,
                     "drilldown": "Internet Explorer"
                 },
@@ -377,7 +281,7 @@ Highcharts.chart('unemployment', {
     }
 });
 
-// Create the chart
+/// Create the chart
 Highcharts.chart('highschoolchart', {
     chart: {
         type: 'column'
@@ -442,9 +346,8 @@ tooltip: {
 
 });
 
-
 // Create the chart household poverty
-Highcharts.chart('household', {
+Highcharts.chart('container', {
     chart: {
         type: 'column'
     },
@@ -524,7 +427,7 @@ var pieColors = (function () {
 }());
 
 // Build the chart
-Highcharts.chart('westgarfieldpark', {
+Highcharts.chart('eastgarfieldpark', {
     chart: {
         plotBackgroundColor: null,
         plotBorderWidth: null,
@@ -566,9 +469,6 @@ Highcharts.chart('westgarfieldpark', {
     }]
 });
 
-
-
-
 // Make monochrome colors
 var pieColors = (function () {
     var colors = [],
@@ -584,7 +484,7 @@ var pieColors = (function () {
 }());
 
 // Build the chart
-Highcharts.chart('eastgarfieldpark', {
+Highcharts.chart('eastgarfielpark', {
     chart: {
         plotBackgroundColor: null,
         plotBorderWidth: null,
@@ -617,14 +517,15 @@ Highcharts.chart('eastgarfieldpark', {
     series: [{
         name: 'Share',
         data: [
-            { name: 'African-American', y: 89.7 },
-            { name: 'Latino', y: 3.5 },
-            { name: 'White', y: 5.3 },
-            { name: 'Other', y: 1.5 },
+            { name: 'African-American', y: 88.4 },
+            { name: 'Latino', y: 6.3 },
+            { name: 'White', y: 4.3 },
+            { name: 'Other', y: .10 },
 
         ]
     }]
 });
+
 
 
 
@@ -686,7 +587,7 @@ Highcharts.chart('northlawndale', {
 });
 
 
-// Build the chart
+
 Highcharts.chart('mortality', {
     chart: {
         type: 'bar'
@@ -727,6 +628,72 @@ Highcharts.chart('mortality', {
         name: 'Heart Disease Deaths',
         data: [269, 244, 284, 258, 267, 199, 200, 189, 144, 155]
     }]
+});
+
+
+/// Create the chart
+Highcharts.chart('smoking', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+    text: 'Health Behaviors: Smoking'
+},
+subtitle: {
+    text: 'Click the columns to view versions. Source: <a href="http://statcounter.com" target="_blank">statcounter.com</a>'
+},
+xAxis: {
+    type: 'category'
+},
+yAxis: {
+    title: {
+        text: 'Total Percentage'
+    }
+
+},
+legend: {
+    enabled: false
+},
+plotOptions: {
+    series: {
+        borderWidth: 0,
+        dataLabels: {
+            enabled: true,
+            format: '{point.y:.1f}%'
+        }
+    }
+},
+
+tooltip: {
+    headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+    pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+},
+
+"series": [
+    {
+        "name": "Browsers",
+        "colorByPoint": true,
+        "data": [
+            {
+                "name": "Chicago's West Side",
+                "y": 20.4,
+                "drilldown": "West Side"
+            },
+            {
+                "name": "The Loop",
+                "y": 9.8,
+                "drilldown": "The Loop"
+            },
+            {
+                "name": "Chicago's Average",
+                "y": 18.4,
+                "drilldown": "Chicago Average"
+            },
+
+        ]
+    }
+],
+
 });
 
 /// Create the chart
@@ -793,4 +760,3 @@ tooltip: {
 ],
 
 });
-</script>
