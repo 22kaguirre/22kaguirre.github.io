@@ -32,6 +32,16 @@ p {
   fill: #ffffff;
 }
 
+.static-image {
+  width: 75%;
+  border:5px groove gold;
+  border-radius:50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 .container {
   max-width: 960x;
   margin:0 auto;
