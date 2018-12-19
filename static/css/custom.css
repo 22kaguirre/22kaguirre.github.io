@@ -1,5 +1,5 @@
 body {
-  background-color: #e1efff;
+  background-color: #ffffff;
 }
 
 
@@ -8,27 +8,33 @@ h1 {
   font-family:'Anton', sans-serif;
   font-weight: ;
   font-size: 40px;
+  text-align: center;
 }
 
 h2 {
   color: #2e5c80;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-family: 'Open Sans', serif;
+  font-size: 30px;
 
+}
+
+h3 {
+    color: inherit;
+    font-family: 'Open Sans', serif;
+    font-size: 10px:
 }
 
 p {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .highcharts-background {
-  fill: #e1efff;
+  fill: #ffffff;
 }
 
 .container {
-  max-width: 960px;
-  margin: 0 auto;
-  background: #f9f9f9;
+  max-width: 960x;
+  margin:0 auto;
   font-size: 24px;
   padding: 25px;
 }
@@ -45,4 +51,48 @@ p {
   position: relative;
   font-size: 50px;
   text-align: center;
+}
+
+div {
+  padding-top: 0px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic);
+blockquote{
+  font-size: 20px;
+  width:60%;
+  margin:50px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #78C0A8 ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+}
+
+blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#78C0A8;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: '';
+}
+
+blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
 }

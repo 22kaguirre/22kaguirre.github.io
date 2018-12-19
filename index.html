@@ -11,6 +11,10 @@
 
 <!-- JS -->
 <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+<!-- optional -->
+<script src="http://code.highcharts.com/modules/offline-exporting.js"></script>
+<script src="http://code.highcharts.com/modules/export-data.js"></script>
 <script src="https://code.highcharts.com/modules/data.js"></script>
 <script src="https://code.highcharts.com/modules/drilldown.js"></script>
 <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
@@ -27,76 +31,121 @@ crossorigin=""></script>
 <link rel="stylesheet" href="static/css/custom.css">
 </head>
 
-
+<!-- Body -->
 <body>
-  <div class="parallax-window" data-z-index="1" data-parallax="scroll" data-image-src="static/images/westside.jpg">
-    <p class="sectionhead">Section header here</p>
-  </div>
+  <container><div class="parallax-window" data-z-index="1" data-parallax="scroll" data-image-src="static/images/blackart.jpg">
+    <p class="sectionhead"><b>Live Healthy, West Side: <br /> A West Side United Initiative</b></p>
+  </div></container>
+
+
 
   <div class="container">
-    <h1> Live Healthy, West Side:</h1><h2> A West Side United Initiative </h2>
-    <p>
-    <h1> A Health Diagnosis: </h1>
-    <img src="static/images/westside.jpg" alt="westside"/>
-    </p>
-    <p> Average life expectancy in Chicago's loop is 85 years, however, if you take the train a few stops into the West side, life expectancy drops to 69 years.</p>
-    <img src="static/images/map.jpg" alt="westsidemap"/>
-    <h2> This 16-year life expectancy gap exists due to social inequities in education, physical environment, economic vitality, and healthcare. </h2>
+    <h1> West Side United Background</h1><br/>
+    <p> West Side United is an ambitious effort led by Rush University Medical Center, University of Illinois Hospital and Health Sciences System, Sinai Urban Health Institute, Cook County Health and Hospitals System, Ann & Robert H. Lurie Children’s Hospital of Chicago, and Presence/AMITA Health to reduce the gap in life expectancy of the residents on the West Side, which includes ten neighborhoods where more than 500,000 people reside.</p>
+    <li> Austin </li>
+    <li> East Garfield Park </li>
+    <li> West Garfield Park </li>
+    <li> Humboldt Park </li>
+    <li> Belmont-Cragin </li>
+    <li> North Lawndale </li>
+    <li> South Lawndale </li>
+    <li> Near West Side </li>
+    <li> Lower West Side </li>
+    <li> West Town </li>
+    <br>
+    <p>The work of West Side United is focused on addressing the social determinants of health –economic vitality, education, the neighborhood environment, and healthcare –to improve health outcomes.</p>
+
+
+  <container>
+    <div class="parallax-window" data-z-index="1" data-parallax="scroll" data-image-src="static/images/westside.jpg">
+    <p class="sectionhead"><b>Chicago's West Side: <br />A Health Diagnosis</b></p></div>
+  </container><br/>
+
+    <p> Average life expectancy in Chicago's loop is 85 years, however, if you take the train a few stops into the West side, life expectancy drops to 69 years in West Garfield Park.</p>
+    <br><img src="static/images/1map.jpg" width="1000" height="700" align="middle" style="border:5px groove gold;"" border-radius:'50px'; alt="westsidemap"/></br>
+    <hr style="border: 24px solid green;" />
+    <h2> This 16-year life expectancy gap exists due to social inequities in education, physical environment, economic vitality, and healthcare. </h2></br>
   <div class="row">
     <div class="col" id="highschoolchart"></div>
     <div class="col" id="unemployment"></div>
     <div class="col" id="household"></div>
   </div>
+  <hr style="border: 24px solid green;" />
+  <h2>In the five most impacted community areas, adult smoking rates are roughly double that of the Chicago average, and adult obesity rates are 25-65% higher than the Chicago average.
+  </h2>
+  <div class="col" id="smoking"></div>
+
+  <br/>
+    <hr style="border: 24px solid green;" />
     <h2> In the three West Side community areas where life expectancy is below 70 years – 89-95% of residents are African-American.
     </h2>
-  <div class="row">
+  <br/>
+    <div class="row">
     <div class="col" id="westgarfieldpark"></div>
-    <div class="col" id="eastgarfieldpark"></div>
+<div class="col" id="eastgarfieldpark"></div>
     <div class="col" id="northlawndale"></div>
-  </div>
-    <h3>According to our research, the top 5 Causes of Death in the West Side are:</h3>
+</div>
+  <br/>
+  <hr style="border: 24px solid green;" />
+    <h2>According to our research, the top 5 Causes of Death in the West Side are:</h2>
     <div class="col" id="mortality"></div>
+  <hr style="border: 24px solid green;" />
+  <h1> Reducing the Life Expectancy Gap</h1>
+  <p> To reduce the life expectancy gap of residents in Westside, WSU is dedicated to bringing healthcare institutions together to address the health of 10 communities in their backyards.
+    Individually, participating hospital identify community health priorities based on their Community Health Needs Assessments (CHNAs) and their requisite Community Health Improvement Plans (CHIPs). Collectively, they are working on health screening in the ER, expansion of Community Health Workers, and co-location of mental/behavioral health services.  However, an overarching strategy to community health strategy—that builds upon current efforts—that can guide future collective initiatives is missing.</p>
+
+<br>
+
+<container>
+  <div class="parallax-window" data-z-index="1" data-parallax="scroll" data-image-src="static/images/mural-pilsen.jpg">
+  <p class="sectionhead"><b>What are the people saying?</b></p></div>
+</container>
+
+  <br>
+  <h2> Healthcare Providers in the West Side:</h2>
+
+<div class="row">
+  <blockquote>You’ll hear it from everyone, but there is just not enough behavioral health capacity. We can manage low-complexity conditions, but there is a serious lack of psychiatric providers. I recently heard there are only two Spanish-speaking pediatric psychiatrists in the state of Illinois.
+  <span>West Side Health Stakeholder</span>
+  </blockquote>
+  <blockquote>We could be all treating the same patients, and we don’t know it unless they tell us. They could be working with three different care coordinators or have fallen through the cracks.
+  <span>West Side Health Stakeholder</span></blockquote>
+  <blockquote>When a patient [from our FQHC] goes to the hospital, we don’t usually know unless they tell us. We have no way of knowing what happens to our patients elsewhere, so we might be unaware of a hospital stay or doing duplicative tests when they come to us.”
+  <span>West Side Health Stakeholder</span></blockquote>
+</div>
+
+  <h2> Residents of the West Side:</h2>
+
+<blockquote>The World Health Organization has models where they are going to communities and taking a grassroot approach and using indigenous people to carry the health message.  If we are going to bridge the divide we need peer workers to carry the information for those that don't have access<span>West Side Resident</span></blockquote>
+<blockquote>We need education on mental health, some people have severe PTSD and they don’t know it, they think it’s normal and it’s not, it needs to be addressed.<span>West Side Resident</span></blockquote>
+<blockquote>Address our “well-being” versus our health<span>West Side Resident</span></blockquote>
 
 
+<container>
+  <div class="parallax-window" data-z-index="1" data-parallax="scroll" data-image-src="static/images/walking.jpg">
+  <p class="sectionhead"><b>A Doctor's Note</b></p></div>
+</container>
 
-
-
-
-
-
-
-
-
-<h2> To reduce the life expectancy gap of residents in Westside, WSU is dedicated to bringing healthcare institutions together to address the health of 10 communities in their backyards.
-</h2>
-<h3> For example a health behavior triggered by social indicators that impacts health on the west side is:</h3>
-<div class="col" id="smoking"></div>
-<p>
-<h1>What are the people saying?</h1>
-<img src="static/images/mural-pilsen.jpg" alt="mural-pilsen"/>
-</p>
-<h2> Healthcare Providers in the West Side:</h2>
-<h2>“You’ll hear it from everyone, but there is just not enough behavioral health capacity. We can manage low-complexity conditions, but there is a serious lack of psychiatric providers. I recently heard there are only two Spanish-speaking pediatric psychiatrists in the state of Illinois.”
-</h2>
-<h2>“We could be all treating the same patients, and we don’t know it unless they tell us. They could be working with three different care coordinators or have fallen through the cracks.”
-</h2>
-<h2>“When a patient [from our FQHC] goes to the hospital, we don’t usually know unless they tell us. We have no way of knowing what happens to our patients elsewhere, so we might be unaware of a hospital stay or doing duplicative tests when they come to us.”
-</h2>
-<h2> Residents of the West Side:</h2>
-<h1> A Doctor's Note:</h1>
-<h2>  Based on our analysis of mortality/morbidity data, scan of health program gaps, and one-on-one interviews with health stakeholders in the West Side,  we have found 5 focus areas to address that can ultimately move the needle in life expectancy in the West Side. </h2>
-
-<li> Maternal and Child Health </li>
-<li> Childhood Asthma </li>
-<li> Hypertension Management </li>
+<br>
+  <p>  Based on our analysis of mortality/morbidity data, scan of health program gaps, and one-on-one interviews with health stakeholders in the West Side,  we have found 5 focus areas to address that can ultimately move the needle in life expectancy in the West Side. </p>
+  <li> Maternal and Child Health </li>
+  <li> Childhood Asthma </li>
+  <li> Hypertension Management </li>
 <li> Behavioral Health </li>
-<li> Healthy Eating Active Lifestyle </li>
-<img src="static/images/WSUbridge.jpg" alt="WSUBridge"/>
-<h2> In order to address the social determinants of health, West Side United will focus on foundational elements and existing conditions for hospitals to strengthen their impact through a collective set of community health initiatives around our 1-2 of the 5 focus areas.</h2>
+  <li> Healthy Eating Active Lifestyle </li>
+<br>
+  <hr style="border: 24px solid green;" />
+  <img src="static/images/WSUbridge.jpg" width="1000" height="700" align="middle" style="border:5px groove gold;"alt="WSUBridge"/>
+<br>
+<br>
+  <h1> The Plan</h1>
+  <p> In order to address the social determinants of health, West Side United will focus on foundational elements and existing conditions for hospitals to strengthen their impact through a collective set of community health initiatives around our 1-2 of the 5 focus areas. More information will be made available to the public in late March.</p>
 
 
 </body>
 
+
+<!-- Charts -->
 <script>
 Highcharts.chart('unemployment', {
     chart: {
@@ -106,7 +155,7 @@ Highcharts.chart('unemployment', {
         text: 'Unemployment Rates'
     },
     subtitle: {
-        text: 'Click the columns to view versions. Source: <a href="http://chicagohealthatlas.org" target="_blank">chicagohealthatlas.org</a>'
+        text: 'Source: <a href="http://chicagohealthatlas.org" target="_blank">chicagohealthatlas.org</a>'
     },
     xAxis: {
         type: 'category'
@@ -390,7 +439,7 @@ Highcharts.chart('highschoolchart', {
     text: 'Population without a High School Degree'
 },
 subtitle: {
-    text: 'Click the columns to view versions. Source: <a href="http://statcounter.com" target="_blank">statcounter.com</a>'
+    text: 'Source: <a href="http://chicagohealthatlas.org" target="_blank">chicagohealthatlas.org</a>'
 },
 xAxis: {
     type: 'category'
@@ -456,7 +505,7 @@ Highcharts.chart('household', {
         text: 'Household Poverty'
     },
     subtitle: {
-        text: 'Click the columns to view versions. Source: <a href="http://statcounter.com" target="_blank">statcounter.com</a>'
+        text: 'Source: <a href="http://chicagohealthatlas.org" target="_blank">chicagohealthatlas.org</a>'
     },
     xAxis: {
         type: 'category'
@@ -742,7 +791,7 @@ Highcharts.chart('smoking', {
     text: 'Health Behaviors: Smoking'
 },
 subtitle: {
-    text: 'Click the columns to view versions. Source: <a href="http://statcounter.com" target="_blank">statcounter.com</a>'
+    text: ' Source: <a href="http://chicagohealthatlas.org" target="_blank">chicagohealthatlas.org</a>'
 },
 xAxis: {
     type: 'category'
